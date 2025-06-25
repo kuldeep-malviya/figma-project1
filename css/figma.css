@@ -10,11 +10,14 @@
             footer .container{
                 margin-left: 0px;
             }
+            .rafiki-center{
+                margin-left:70px;
+            }
         }
         nav ul a{
             margin-right: 30px;
         }
-        
+       
 
         body {
             font-family: arial;
