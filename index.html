@@ -10,20 +10,12 @@
             font-family: Arial;
             overflow: auto;
         }
-        *{
+
+        * {
             padding: 0;
             margin: 0;
         }
 
-
-        nav {
-            background-color: white;
-            color: black;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 15px 30px;
-        }
 
         .logo {
             font-size: 24px;
@@ -47,26 +39,6 @@
         .nav-links a:hover {
             color: violet;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-            }
-
-            .nav-links a {
-                padding: 10px 0;
-                width: 100%;
-                border-top: 1px solid #444;
-            }
-        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -82,7 +54,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="./images/Icon.png" alt="Logo" width="35" height="24" class="me-2">
@@ -92,7 +64,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" >
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
@@ -109,38 +81,41 @@
     </nav>
 
     </div>
-    <div class="main">
-        <div class="content">
-            <h1
-                style=" line-height:30px; font-size: 35px;letter-spacing: 1px ; display:inline-block; color:#4D4D4D; font-weight: 600;">
-                Lessons and insights</h1>
+    <!-- hero section -->
+     <section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" new2 col-12 col-md-6">
+                <h1
+                    style=" line-height:30px; font-size: 35px;letter-spacing: 1px ; display:inline-block; color:#4D4D4D; font-weight: 600;">
+                    Lessons and insights</h1>
                 <h1 style=" line-height:30px;color:#4CAF4F;font-size: 35px; letter-spacing: 1px ;">form 8 years</h1>
-                <p style="color:#4D4D4D;">where to grow your bussiness as a photographer: site or social media? </p> <br>
+                <p style="color:#4D4D4D;">where to grow your bussiness as a photographer: site or social media? </p>
+                
                 <form action="thanks.html">
                     <button class="button2">Register</button>
                 </form>
-                <div class="images">
-                    <img src="./images/Illustration.png" alt="" style="transform: translate(0px,-200px);">
-                    <!-- <img style="display: inline-block; transform:translate(100px);" src="./images/device1.png" alt="">
-                    <img style="display: inline-block; transform:translate(-25px,-20px); " src="./images/device2.png"
-                        alt=""><img style="transform: translate(-110px,140px);" src="./images/device3.png" alt="">
-                    <img style="transform: translate(-50px,130px);" src="./images/shadowCircle.png" alt="">
-                    <img style="transform: translate(-150px,50px);" src="./images/character.png" alt=""> -->
+            </div>
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="images1">
+                    <img src="./images/Illustration.png" alt="">
                 </div>
-        </div>s
-    </div>
-    
-    <div class="mt-4" >
-        <div class="text-center" style="margin-left: 300px;">
-            <h2  class="" style="color:#4D4D4D; text-align: center;"> Our Clients</h2>
-        <p style="color: #4D4D4D;" class="text-center">We have been working with some Fortune 500+ clients</p>
+            </div>
+
         </div>
-        
+    </div>
+    </section>
+
+    <div class="mt-4">
+        <div class="text-center">
+            <h2 class="" style="color:#4D4D4D; text-align: center;"> Our Clients</h2>
+            <p style="color: #4D4D4D;" class="text-center">We have been working with some Fortune 500+ clients</p>
+        </div>
+
         <div class="images7 mt-4">
-            <!-- <img class="img2" src="./images/Logo (1).png" alt=""><img class="img2" src="./images/Logo (3).png" alt=""><img
-                class="img2" src="./images/Logo (2).png" alt=""><img class="img2" src="./images/Logo (4).png" alt=""><img
-                class="img2" src="./images/Logo (5).png" alt=""><img class="img2" src="./images/Logo (6).png" alt=""><img
-                class="img2" src="./images/Logo (7).png" alt=""> -->
             <img src="./images/Clients Logos.jpg" width="90%" alt="">
         </div>
 
@@ -171,33 +146,45 @@
         <p style="margin-left:100px; line-height: 10px;     color: #4D4D4D;">software provides full automation of</p>
         <p style="margin-left:100px; line-height: 10px;color: #4D4D4D;">membership renewals and payments</p>
     </div>
-    <div class=" d-inline-block " style="margin-left: 100px; width: 441; height:328px; margin-top:50px;">
-        <!-- <img style="position:relative; top:80px;
-        right:-20px; padding-bottom: 300px;" src="./images/character-1.png" alt="">
-        <img style="padding-bottom: 300px;" src="./images/Screen.png" alt="">
-        <img style="position:relative; top:60px; left:-20px; padding-bottom: 300px; " src="./images/character-2.png"
-            alt=""> -->
-        <img src="./images/rafiki.svg" width="400px" alt="" style="transform: translate(0px,-80px);">
-    </div>
-    <div class="d-inline-block"
-        style="margin-left:100px; width: 6611; height:268px; margin-bottom: 0px; margin-top: 60px;">
-        <h2 style="color:#4D4D4D; ">The unseen of spending three</h2>
-        <h2 style="color:#4D4D4D">Years at pixelgrade</h2>
-        <p style="color:#4D4D4D">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-            Sed<br> accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed <br>porta.
-            Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam<br> quis massa
-            pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
-        <button class="mt-4" style="background-color: #4CAF4F;color:#F5F7FA; padding:10px 30px; border: none;">Learn
-            More</button>
-    </div>
-    <div class="main3">
-        <div class="d-inline-block" style="float:left; margin: 80px 0px 50px 100px;">
-            <h2>Helping a local</h2>
-            <h2 style="color:#4CAF4F">Bussiness reivent itself</h2>
-            <p>we reached hear with our hard work and dedication</p>
+
+    <div class=" main5 conntainer mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="./images/rafiki.svg" width="400px" alt="">
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div>
+                    <h2 style="color:#4D4D4D; ">The unseen of spending three</h2>
+                    <h2 style="color:#4D4D4D">Years at pixelgrade</h2>
+                    <p style="color:#4D4D4D ;text-align:left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo
+                        ipsum.Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+                        porta.
+                        Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa
+                        pulvinar, aliquam quam vitae, tempus sem. Donec elementum <br> pulvinar odio.</p>
+                    <button class="mt-4"
+                        style="background-color: #4CAF4F;color:#F5F7FA; padding:10px 30px; border: none;">Learn
+                        More</button>
+                </div>
+            </div>
+
         </div>
-        <div class="d-inline-block">
-            <div class="d-inline-block" style="margin:50px 100px 50px 200px;">
+    </div>
+    <br>
+    <div class="container mt-5 me-5">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h2>Helping a local</h2>
+                <h2 style="color:#4CAF4F">Bussiness reivent itself</h2>
+                <p>we reached hear with our hard work and dedication</p>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-3">
                 <img src="./images/icon-1.png" alt="">
                 <h2 class="d-inline ms-3">2,245,341</h2>
                 <p>members</p>
@@ -205,7 +192,7 @@
                 <h2 class="d-inline ms-3">46,328</h2>
                 <p>clubs</p>
             </div>
-            <div class="d-inline-block">
+            <div class="col-md-3">
                 <img src="./images/icon-3.png" alt="">
                 <h2 class="d-inline ms-3">828,867</h2>
                 <p>event bookings</p>
@@ -214,127 +201,130 @@
                 <p>payments</p>
             </div>
         </div>
+        <br>
+        <br>
     </div>
-    <div style="width:100%; display: inline-block; padding-bottom: 50px;">
-        <div class="main4 d-flex" style="justify-content: space-between; align-items: center;">
-            <div style="transform: translate(-50px,10px); margin-bottom:50px ;">
-                <!-- <img style="transform: translate(300px,-150px);" src="./images/Padlock.png" alt="">
-                <img style="transform: translate(210px,50px);" src="./images/Plant.png" alt="">
-                <img style="transform: translate(-2px,1px);" src="./images/Device-1.png" alt="">
-                <img style="transform: translate(-240px,60px);" src="./images/char1.png" alt=""> -->
-                <img src="./images/pana.svg" width="400px" alt="">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+
             </div>
-            <div class="d-inline-block" style="padding-top: 0px; float: right; margin-right: 50px;">
+            <div class="col-12 col-md-5">
+                <img src="./images/pana.svg" width="350px" alt="">
+            </div>
+            <div class="col-12 col-md-6">
                 <h2>how to design your site footer like</h2>
                 <h2>We need</h2>
-                <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt<br> molestie,
+                <p style="text-align: left;">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie,
                     massa
-                    nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at<br> libero ultrices mollis.
+                    nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis.
                     In
                     hac
-                    habitasse platea dictumst. Vivamus vehicula leo dui, at porta<br> nisi facilisis finibus. In euismod
+                    habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod
                     augue
-                    vitae nisi ultricies, non aliquet urna tincidunt. Integer<br> in nisi eget nulla commodo faucibus
+                    vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
                     efficitur
-                    quis massa. Praesent felis est, finibus et nisi<br> ac, hendrerit venenatis libero. Donec
+                    quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec
                     consectetur
                     faucibus ipsum id gravida.</p>
                 <button style="background-color: #4CAF4F;color: white; padding:10px 30px;border: none;">Learn
                     more</button>
             </div>
+
         </div>
-        <div style="background-color: #F5F7FA;">
-            <div style=" margin-left: 100px; display: inline-block; transform: translateY(-50px);">
+    </div>
+    <br>
+    <!-- <div style="background-color: #F5F7FA;">
+        <div style=" margin-left: 100px; display: inline-block; transform: translateY(-50px);">
+            <img class="" src="./images/image 9.png" alt="">
+        </div>
+        <div class="d-inline-block" style=" transform: translate(40px,50px); margin-bottom: 100px;
+        background-color: #F5F7FA; margin-right:10px; margin-bottom: 50px;">
+            <p>Maecenas digniss
+                im justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus <br> tincidunt
+                ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida <br> enim.
+                Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie <br>
+                mi
+                blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+                <br>
+                eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien,<br>
+                vitae
+                placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum <br>id.
+                Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+            </p>
+            <h4 class="text-success">Team Smith</h4>
+            <p>British Dragon Boat Racing Association</p>
+            <img class="me-4" src="./images/Logo (8).png" alt=""><img class="me-4" src="./images/Logo (3).png"
+                alt=""><img class="me-4" src="./images/Logo (9).png" alt=""><img class="me-4"
+                src="./images/Logo (4).png" alt=""><img class="me-4" src="./images/Logo (6).png" alt=""><img
+                class="me-4" src="./images/Logo (7).png" alt="">
+            <h4 class="d-inline-block text-success">meet all customers</h4><img src="./images/Right.png" alt="">
+        </div>
+    </div> -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
                 <img class="" src="./images/image 9.png" alt="">
             </div>
-            <div class="d-inline-block" style=" transform: translate(40px,50px); margin-bottom: 100px;
-        background-color: #F5F7FA; margin-right:10px; margin-bottom: 50px;">
-                <p>Maecenas digniss
-                    im justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus <br> tincidunt
-                    ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida <br> enim.
-                    Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie <br>
-                    mi
-                    blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
-                    <br>
-                    eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien,<br>
-                    vitae
-                    placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum <br>id.
-                    Curabitur id nibh id sem dignissim finibus ac sit amet magna.
-                </p>
-                <h4 class="text-success">Team Smith</h4>
-                <p>British Dragon Boat Racing Association</p>
-                <img class="me-4" src="./images/Logo (8).png" alt=""><img class="me-4" src="./images/Logo (3).png"
-                    alt=""><img class="me-4" src="./images/Logo (9).png" alt=""><img class="me-4"
-                    src="./images/Logo (4).png" alt=""><img class="me-4" src="./images/Logo (6).png" alt=""><img
-                    class="me-4" src="./images/Logo (7).png" alt="">
-                <h4 class="d-inline-block text-success">meet all customers</h4><img src="./images/Right.png" alt="">
-            </div>
-        </div>
-        <div>
-            <!-- <h3 class="text-center" style="line-height: 60px;">Caring is the new marketing</h3>
-            <p class="text-center" style="line-height: 10px;">The Nexcent blog is the best place to read about the
-                latest
-                membership insights,</p>
-            <p class="text-center" style="line-height: 10px;"> trends and more. See who's joining the community, read
-                about
-                how our community</p>
-            <p style="line-height: 10px;" class="text-center"> are increasing their membership income and lot's more.​
+            <div class="col-12 col-md-6">
+                 <p>Maecenas digniss
+                im justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus  tincidunt
+                ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida  enim.
+                Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie 
+                mi
+                blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+                
+                eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae
+                placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id.
+                Curabitur id nibh id sem dignissim finibus ac sit amet magna.
             </p>
-            <div style="margin-top: 20px;">
-                <img style="width:320px; margin-left: 100px;" src="./images/image 18.png" alt=""><img
-                    style="width:320px; margin-left:50px;" src="./images/image 19.png" alt=""><img
-                    style="width:320px;margin-left:50px;" src="./images/image 20.png" alt="">
-            </div>
-        </div>
-        <div class="div1" style="box-shadow: 0px 5px 4px #F5F7FA;">
-            <p class="text-center">creating streamlined<br> safeguarding processes with <br>oneRen</p>
-            <a style="padding-left:85px; color:#4CAF4F;" href="#">readmore</a>
-            <img src="./images/Right.png" alt="">
-        </div>
-        <div class="div2" style="box-shadow: 0px 5px 4px #F5F7FA">
-            <p class="text-center">What are your safeguarding responsibilities and how can you manage them?</p>
-            <a style="padding-left:85px; color:#4CAF4F;" href="#">readmore</a>
-            <img src="./images/Right.png" alt="">
-        </div>
-        <div class="div3" style="box-shadow: 0px 5px 4px #F5F7FA;">
-            <p class="text-center">Revamping the Membership<br>Model with Triathlon<br> Australia</p>
-            <a style="padding-left:84px; color: #4CAF4F;" href="#">Readmore</a>
-            <img src="./images/Right.png" alt="">
-
-        </div> -->
-        <div class="section">
-        <h2>Caring is the new marketing</h2>
-        <p>The Nextonxt blog is the best place to read about the latest membership insights, trends and more.</p>
-
-        <div class="cards " style="display: flex;justify-content: space-evenly; align-items: center;">
-            <div class="card">
-                <img src="./images/image 18.png"
-                    alt="Card 1">
-                <div class="card-body">
-                    <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
-                    <a href="#">Readmore →</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./images/image 19.png"                  alt="Card 2">
-                <div class="card-body">
-                    <h4>What are your safeguarding responsibilities and how can you manage them?</h4>
-                    <a href="#">Readmore →</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./images/image 20.png"
-                    alt="Card 3">
-                <div class="card-body">
-                    <h4>Revamping the Membership Model with Triathlon Australia</h4>
-                    <a href="#">Readmore →</a>
-                </div>
+            <h4 class="text-success">Team Smith</h4>
+            <p>British Dragon Boat Racing Association</p>
+            
+            <!-- <img class="me-4" src="./images/Logo (8).png" alt=""><img class="me-4" src="./images/Logo (3).png"
+                alt=""><img class="me-4" src="./images/Logo (9).png" alt=""><img class="me-4"
+                src="./images/Logo (4).png" alt=""><img class="me-4" src="./images/Logo (6).png" alt=""><img
+                class="me-4" src="./images/Logo (7).png" alt=""> -->
+                <img src="./images/Frame 10.png" width="310px" alt="">
+            <h4 class="d-inline text-success">meet all customers</h4><img src="./images/Right.png" alt="">
             </div>
         </div>
     </div>
-        <div style="background-color: #F5F7FA;">
+    <div>
+
+        <div class="section">
+            <h2>Caring is the new marketing</h2>
+            <p>The Nextonxt blog is the best place to read about the latest membership insights, trends and more.</p>
+
+            <div class="cards " style="display: flex;justify-content: space-evenly; align-items: center;">
+                <div class="card">
+                    <img src="./images/image 18.png" alt="Card 1">
+                    <div class="card-body">
+                        <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
+                        <a href="#">Readmore →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/image 19.png" alt="Card 2">
+                    <div class="card-body">
+                        <h4>What are your safeguarding responsibilities and how can you manage them?</h4>
+                        <a href="#">Readmore →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/image 20.png" alt="Card 3">
+                    <div class="card-body">
+                        <h4>Revamping the Membership Model with Triathlon Australia</h4>
+                        <a href="#">Readmore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div style="background-color: #F5F7FA;">
             <h1 class="text-center pt-5">
                 Pellentesque suscipit<br>fringilla libero eu.
             </h1>
@@ -345,38 +335,59 @@
             <div></div>
             <img style="transform: translate(780px,-50px);" src="./images/Right2.png" alt="">
 
-        </div>
-
-        <div style="background-color: black;padding-top: 50px; width:100%;height: 300px;">
-            <div style="margin-left: 100px; display: inline-block;">
-                <img src="./images/logo--1.png" alt="" width="35px" height="24px">
-                <h3 class="text-light d-inline-block">Nexcent</h3>
-                <p style="color: #F5F7FA; padding-top: 20px;">Copyright © 2020 Nexcent <br>Allright reserved</br></p>
-                <br>
-
-                <img class="me-3" src="./images/Social Icons1.png" alt=""><img class="me-3" src="./images/Social Icons2.png"
-                    alt=""><img class="me-3" src="./images/Social Icons3.png" alt=""><img class="me-3"
-                    src="./images/Social Icons4.png" alt="">
-            </div>
-            <div class="d-inline-block" style="transform: translate(100px,-40px);">
-                <h4 style="color: white;">company</h4>
-                <a style="color: white;" href="">about us</a><br><a style="color: white;" href="">blog</a><br><a
-                    style="color: white;" href="">contact us</a><br><a style="color: white;" href="">pricing</a>
-            </div>
-            <div class="d-inline-block" style="transform: translate(200px,-40px);">
-                <h4 style="color: white;">support</h4>
-                <a style="color: white;" href="">help center</a><br><a style="color: white;" href="">Term of
-                    service</a><br><a style="color: white;" href="">legal</a><br><a style="color: white;"
-                    href="">privacy
-                    policy</a>
-            </div>
-            <div class="d-inline-block" style="transform: translate(300px,-112px);">
-                <h4 style="color: white;">Stay up to date</h4>
-                <form action="">
-                    <input type="email" placeholder="Your email address">
-                </form>
+        </div> -->
+        <div class="conatainer">
+            <div class="row">
+                <div class="col-12">
+                     <h1 class="text-center pt-5">
+                Pellentesque suscipit<br>fringilla libero eu.
+            </h1>
+                </div>
+                <div class="row">
+                <div class="col-12 text-center">
+                    <button
+                style="  width: 300px; padding: 10px 100px; color: white; background-color: #4CAF4F; border: none;" >Get
+                a demo</button>
+                </div>
+                
             </div>
         </div>
+        <footer class="footer mt-5 bg-black" style="padding: 50px;">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./images/logo--1.png" alt="Logo" width="35" height="24">
+                        <h3 class="d-inline">Nexcent</h3>
+                        <p class="text-white-50">Copyright © 2020 Nexcent<br>All rights reserved</p>
+                        <div>
+                            <img src="./images/Social Icons1.png" alt="">
+                            <img src="./images/Social Icons2.png" alt="">
+                            <img src="./images/Social Icons3.png" alt="">
+                            <img src="./images/Social Icons4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Company</h4>
+                        <p>About us</p>
+                        <p>Blog</p>
+                        <p>Contact us</p>
+                        <p>Pricing</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Support</h4>
+                        <p>Help center</p>
+                        <p>Terms of service</p>
+                        <p>Legal</p>
+                        <p>Privacy policy</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Stay up to date</h4>
+                        <input type="email" placeholder="Your email address">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 
 </body>
 
