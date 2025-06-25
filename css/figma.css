@@ -237,4 +237,7 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .rafiki{
+                text-align: center;
+            }
         }
