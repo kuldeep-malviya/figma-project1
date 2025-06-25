@@ -186,6 +186,10 @@
             gap: 20px;
         }
 
+        #hover-y:hover{
+            transform: scale(1.1);
+
+        }
         .card {
             background: white;
             border-radius: 16px;
@@ -197,9 +201,11 @@
             transition: transform 0.3s ease;
         }
 
+
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
+
 
         .card img {
             width: 100%;
